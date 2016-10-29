@@ -1,11 +1,11 @@
  function provinceController(Province) {
+   var that = this;
      Province.getData()
      .then (function (response) {
-       this.provinces = response.data;
-       this.Name = response.data[0].name;
-      console.log(this.Name)
+       that.provinces = response.data;
+      //  console.log(response.data);
      })
      .catch (function(error) {
        console.error(error);
-     })
+     });
 }

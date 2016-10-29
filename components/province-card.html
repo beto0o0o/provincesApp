@@ -1,0 +1,18 @@
+<div class="card-wrapper">
+  <div class="titles ">
+    <h1>{{province.name}}</h1>
+  </div>
+  <div class="description" ng-show="showMe">
+    <h3>Capital: {{province.capital.name}}</h3>
+    <p>
+      {{province.description}}
+    </p>
+  </div>
+  <div class="img-wrapper">
+    <img src={{province.image}} alt="province-image" width="150px" />
+  </div>
+  <div class="text-center button-wrapper">
+    <button type="button"  class="btn click-button" ng-click="showMe=!showMe" ng-hide ="showMe">Click for more</button>
+    <button type="button"  class="btn click-button" ng-click="showMe=!showMe" ng-show="showMe">Click for less</button>
+  </div>
+</div>
