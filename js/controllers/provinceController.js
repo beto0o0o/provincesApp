@@ -1,3 +1,4 @@
+app.controller("provinceController",['Province',provinceController]);
  function provinceController(Province) {
    var that = this;
      Province.getData()
